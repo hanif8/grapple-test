@@ -274,6 +274,13 @@ main {
   box-shadow: 0 0 16px 0px rgba(49, 49, 49, 0.18); }
   .inner-bar.t-page {
     transform: translate(0%, -50%); }
+    .inner-bar.t-page .block p.text {
+      display: block; }
+    .inner-bar.t-page .block svg {
+      display: none; }
+    .inner-bar.t-page .block.active svg {
+      display: block;
+      margin: 0 auto; }
   .inner-bar .block {
     width: 125px;
     height: 110px;
@@ -315,7 +322,8 @@ main {
         padding: 0 0.6rem;
         margin: 0;
         line-height: 1.2;
-        color: #ed1d37; }
+        color: #ed1d37;
+        display: none; }
         .inner-bar .block p.text span {
           font-weight: 700;
           color: #404040; }

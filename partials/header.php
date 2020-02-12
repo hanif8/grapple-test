@@ -10,7 +10,7 @@
   <header>
     <div class="container">
       <div class="left">
-          <img src="app/img/logo.jpg" alt="" width='200'>
+          <a href="/"><img src="app/img/logo.jpg" alt="" width='200'></a>
       </div>
       <div class="right">
         <div class="content">

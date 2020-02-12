@@ -94,6 +94,22 @@ main{
     box-shadow: 0 0 16px 0px rgba(49, 49, 49, 0.18);
     &.t-page{
         transform: translate(0%, -50%);
+        .block{
+        	p{
+        		&.text{
+        			display: block;
+        		}
+        	}
+        	svg{
+        		display: none;
+        	}
+        	&.active{
+        		svg{
+					display: block;
+					margin: 0 auto;
+        		}
+        	}
+        }
     }
     .block{
         width: 125px;
@@ -151,6 +167,7 @@ main{
 			    margin: 0;
 			    line-height: 1.2;
 			    color: $red;
+			    display: none;
 			    span{
 			    	font-weight: 700;
 			    	color: #404040;

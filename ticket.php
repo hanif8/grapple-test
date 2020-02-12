@@ -1,9 +1,9 @@
 <?php require_once('partials/header.php'); ?>
 
 <main>
-	<div class="container">
+	<div class="container" id="barba-wrapper">
 	      <div class="left">
-	        <div class="inner-bar t-page">
+	        <div class="inner-bar">
 	          	<div class="block">
 					<div class="inner">
         				<p>From</p>
@@ -53,7 +53,7 @@
 	          	</div>
 	        </div>
 	      </div>
-	      <div class="right">
+	      <div class="right barba-container">
 	        <div class="scroll-section">
     		  <div class="show-all">
 				Show All Fares
