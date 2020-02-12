@@ -41,6 +41,13 @@ body{
 	    flex: 0 0 20%;
 	    max-width: 20%;
 	    background: $red;
+	    @media screen and (max-width: 1024px){
+	        -webkit-box-flex: 0;
+	        -ms-flex: 0 0 100%;
+	        flex: 0 0 100%;
+	        max-width: 100%;
+	        height: auto;
+	    }
     }
     .right{
 	  -webkit-box-flex: 0;
@@ -48,6 +55,12 @@ body{
 	    flex: 0 0 80%;
 	    max-width: 80%;
 	    height: 100%;
+	    @media screen and (max-width: 1024px){
+	        -webkit-box-flex: 0;
+	        -ms-flex: 0 0 100%;
+	        flex: 0 0 100%;
+	        max-width: 100%;
+	    }
     }
 }
 
@@ -69,6 +82,9 @@ main{
 	    display: flex;
 	    align-items: center;
 	    justify-content: flex-start;
+	    @media screen and (max-width: 1024px){
+			background-position: center;
+	    }
 	    .content{
 	        margin: 0 10rem;
 	        h1{
@@ -92,8 +108,17 @@ main{
     transition: $transition;
     z-index: 999;
     box-shadow: 0 0 16px 0px rgba(49, 49, 49, 0.18);
+    @media screen and (max-width: 1024px){
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: none;
+    }
     &.t-page{
         transform: translate(0%, -50%);
+	    @media screen and (max-width: 1024px){
+			transform: none;
+	    }
         .block{
         	p{
         		&.text{
@@ -119,6 +144,10 @@ main{
         align-items: center;
         justify-content: center;
         transition: $transition;
+        @media screen and (max-width: 1024px){
+            display: none;
+            width: 100%;
+        }
         &.extra{
             svg{
                 width: 20px;
@@ -131,6 +160,9 @@ main{
                 path{
                     fill: #fff;
                 }
+            }
+            @media screen and (max-width: 1024px){
+                display: flex;
             }
         }
         &:nth-child(even){
