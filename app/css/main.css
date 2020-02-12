@@ -125,8 +125,8 @@ main .scroll-section {
   main .scroll-section::-webkit-scrollbar-track {
     padding: 1rem 0; }
   main .scroll-section .ticket {
-    padding: 2rem;
-    border-radius: 6px;
+    padding: 1rem 2rem 2.5rem;
+    border-radius: 18px;
     background-color: #f3f3f3;
     margin: 1rem;
     transition: all 0.45s ease-in-out; }
@@ -134,6 +134,12 @@ main .scroll-section {
       background-color: #7e8da6; }
       main .scroll-section .ticket:hover p {
         color: #fff; }
+    main .scroll-section .ticket .recommend {
+      font-size: .85rem;
+      margin: 0 0 .75rem;
+      font-weight: 700;
+      color: #fff;
+      visibility: hidden; }
     main .scroll-section .ticket .info {
       display: flex;
       justify-content: space-between; }
@@ -160,7 +166,10 @@ main .scroll-section {
         main .scroll-section .ticket .info-lower a.buy:hover {
           background-color: #242a34; }
     main .scroll-section .ticket.active {
-      background-color: #242a34; }
+      background-color: #242a34;
+      padding: 1rem 2rem; }
+      main .scroll-section .ticket.active .recommend {
+        visibility: visible; }
       main .scroll-section .ticket.active .info p {
         color: #fff; }
       main .scroll-section .ticket.active .info-lower a.buy {

@@ -45,6 +45,7 @@
 	      <div class="right">
 	        <div class="scroll-section">
 	          <div class="ticket">
+	          	<p class="recommend">Our recommended ticket</p>
 	            <div class="info">
 	              <p>13:58 - 16:00</p>
 	              <p>£102.00</p>
