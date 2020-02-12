@@ -8,4 +8,7 @@ jQuery(document).ready(function($){
 	for (var i = 0; i < 15; i++) {
 	  e.clone().insertAfter(e);
 	}
+
+	 // Activate first child
+    e.first().addClass('active');	
 });

@@ -5,45 +5,59 @@
 	      <div class="left">
 	        <div class="inner-bar t-page">
 	          	<div class="block">
-								<div class="inner">
-	                <p>From</p>
-	                <?php echo file_get_contents("app/img/icons/icon-1.svg"); ?>
-								</div>
+					<div class="inner">
+        				<p>From</p>
+   						<p class="text">
+							London
+							Kings Cross
+							<span>KGX</span>
+						</p>
+					</div>
 	          	</div>
 	          	<div class="block">
-								<div class="inner">
-									<p>To</p>
-	                <?php echo file_get_contents("app/img/icons/icon-2.svg"); ?>
-								</div>
+					<div class="inner">
+						<p>To</p>
+   						<p class="text">
+							Wakefield
+							Westgate
+							<span>WKF</span>
+						</p>
+					</div>
 	          	</div>
 	          	<div class="block">
-								<div class="inner">
-									<p>When</p>
-	                <?php echo file_get_contents("app/img/icons/icon-3.svg"); ?>
-								</div>
+					<div class="inner">
+						<p>When</p>
+   						<p class="text">
+							Oct.09<br>
+							12.30am
+						</p>
+					</div>
 	          	</div>
 	          	<div class="block">
-								<div class="inner">
-									<p>Who</p>
-	                <?php echo file_get_contents("app/img/icons/icon-4.svg"); ?>
-								</div>
+					<div class="inner">
+						<p>Who</p>
+						<p class="text">2 Adults</p>
+					</div>
 	          	</div>
 	          	<div class="block extra">
-								<div class="inner">
-									<p>Extras</p>
-	                <?php echo file_get_contents("app/img/icons/icon-5.svg"); ?>
-								</div>
+					<div class="inner">
+						<p>Extras</p>
+						<p class="text">None</p>
+					</div>
 	          	</div>
 	          	<div class="block active">
-								<div class="inner">
-									<p>Your Ticket</p>
-	                <?php echo file_get_contents("app/img/icons/icon-6.svg"); ?>
-								</div>
+					<div class="inner">
+						<p>Your Ticket</p>
+						<?php echo file_get_contents("app/img/icons/icon-6.svg"); ?>
+					</div>
 	          	</div>
 	        </div>
 	      </div>
 	      <div class="right">
 	        <div class="scroll-section">
+    		  <div class="show-all">
+				Show All Fares
+    		  </div>
 	          <div class="ticket">
 	          	<p class="recommend">Our recommended ticket</p>
 	            <div class="info">

@@ -124,6 +124,18 @@ main .scroll-section {
     padding: 0; }
   main .scroll-section::-webkit-scrollbar-track {
     padding: 1rem 0; }
+  main .scroll-section .show-all {
+    margin: 1rem 2rem;
+    padding: 1rem 0;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: .2px;
+    font-weight: 700;
+    font-size: .85rem;
+    background-image: url("../img/icons/arrow-down.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center right; }
   main .scroll-section .ticket {
     padding: 1rem 2rem 2.5rem;
     border-radius: 18px;
@@ -164,7 +176,7 @@ main .scroll-section {
         margin: 1rem 0 0;
         transition: all 0.45s ease-in-out; }
         main .scroll-section .ticket .info-lower a.buy:hover {
-          background-color: #242a34; }
+          background-color: #7e8da6; }
     main .scroll-section .ticket.active {
       background-color: #242a34;
       padding: 1rem 2rem; }
@@ -222,7 +234,8 @@ body {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 80%;
     flex: 0 0 80%;
-    max-width: 80%; }
+    max-width: 80%;
+    height: 100%; }
 
 main {
   height: 100%;
@@ -297,6 +310,15 @@ main {
       letter-spacing: .2px;
       margin: 0 0 1rem;
       transition: all 0.45s ease-in-out; }
+      .inner-bar .block p.text {
+        font-size: 0.7rem;
+        padding: 0 0.6rem;
+        margin: 0;
+        line-height: 1.2;
+        color: #ed1d37; }
+        .inner-bar .block p.text span {
+          font-weight: 700;
+          color: #404040; }
 
 .overlay-transition {
   position: fixed;
@@ -308,8 +330,7 @@ main {
   opacity: 1;
   transition: all .5s ease;
   will-change: width;
-  z-index: 8989;
-  display: none; }
+  z-index: 8989; }
   .overlay-transition img {
     position: absolute;
     top: 50%;

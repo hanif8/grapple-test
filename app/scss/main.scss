@@ -47,6 +47,7 @@ body{
     	-ms-flex: 0 0 80%;
 	    flex: 0 0 80%;
 	    max-width: 80%;
+	    height: 100%;
     }
 }
 
@@ -144,6 +145,17 @@ main{
             letter-spacing: .2px;
             margin: 0 0 1rem;
             transition: $transition;
+            &.text{
+				font-size: 0.7rem;
+			    padding: 0 0.6rem;
+			    margin: 0;
+			    line-height: 1.2;
+			    color: $red;
+			    span{
+			    	font-weight: 700;
+			    	color: #404040;
+			    }
+            }
         }
     }
   }
@@ -159,7 +171,7 @@ main{
     transition: all .5s ease;
     will-change: width;
     z-index: 8989;
-    display: none;
+    // display: none;
     img{
         position: absolute;
         top: 50%;
