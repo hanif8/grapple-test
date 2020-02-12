@@ -90,6 +90,7 @@ main{
     transform: translate(50%, -50%);
     transition: $transition;
     z-index: 999;
+    box-shadow: 0 0 16px 0px rgba(49, 49, 49, 0.18);
     &.t-page{
         transform: translate(0%, -50%);
     }
@@ -146,3 +147,63 @@ main{
         }
     }
   }
+
+  .overlay-transition{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: $red;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: all .5s ease;
+    will-change: width;
+    z-index: 8989;
+    display: none;
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &.loaded{
+        width: 0;
+        img{
+            display: none;
+        }
+    }
+}
+
+form#search{
+    input[type=text]{
+        padding: 1rem;
+        border-radius: 6px;
+        border: none;
+        font-size: 1.25rem;
+        width: 100%;
+        border: 2px solid #fff;
+        outline: none;
+        transition: $transition;
+        &:focus, &:active{
+            border-color: $red;
+        }
+    }
+    input[type=submit]{
+        width: 4rem;
+        height: 4rem;
+        text-indent: -9999px;
+        background-color: $red;
+        border-radius: 50%;
+        border: none;
+        margin: 1.5rem 0;
+        outline: none;
+        cursor: pointer;
+        background-image: url('../img/icons/arrow.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: $transition;
+        &:hover{
+            background-color: $dark
+        }
+    }
+}
