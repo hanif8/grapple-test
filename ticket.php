@@ -3,7 +3,7 @@
 <main>
 	<div class="container" id="barba-wrapper">
 	      <div class="left">
-	        <div class="inner-bar">
+	        <div class="inner-bar t-page">
 	          	<div class="block">
 					<div class="inner">
         				<p>From</p>
