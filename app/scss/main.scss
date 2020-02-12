@@ -1,6 +1,7 @@
 @import "reset",
 		"variables",
-		"header";
+		"header",
+		"ticket";
 
 *{
 	text-rendering: optimizeLegibility;     
@@ -89,7 +90,7 @@ main{
     transform: translate(50%, -50%);
     transition: $transition;
     z-index: 999;
-    &.left{
+    &.t-page{
         transform: translate(0%, -50%);
     }
     .block{
